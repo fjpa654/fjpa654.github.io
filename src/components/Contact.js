@@ -1,15 +1,16 @@
 // src/components/Contact.js
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import LinkedInIcon from '../assets/icons8-linkedin-50.png';
 
 const Contact = () => {
   return (
-    <Container className="d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
+    <Container >
       <Row>
         <Col xs={12} className="text-center">
-          <h2>Contact Me</h2>
             <a href="https://www.linkedin.com/in/francisco-padilla-248b5069/">
-                <Image src={process.env.PUBLIC_URL + '/assets/icons8-linkedin-50.png'} alt="LinkedIn Icon" />
+                <Image src={process.env.PUBLIC_URL + LinkedInIcon} alt="LinkedIn Icon" />
             </a>
         </Col>
       </Row>
